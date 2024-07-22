@@ -10,6 +10,6 @@ variable "lambda_function_name" {
 variable "webhook_url" {
   type        = map(string)
   default     = {
-    WEBHOOK_URL = "https://hooks.slack.com/services/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"
+    WEBHOOK_URL = ""
   }
 }
