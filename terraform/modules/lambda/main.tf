@@ -6,6 +6,6 @@ resource "aws_lambda_function" "lambda_function" {
   runtime = "python3.12"
   source_code_hash = filebase64sha256("${path.cwd}/../src/lambda_function.zip")
   environment {
-    variables = "${var.webhook_url}"
+    variables = "${var.lambda_envs}"
   }
 }

@@ -4,6 +4,7 @@ module "iam" {
 
 module "lambda" {
     source = "./modules/lambda"
+    lambda_envs = "${var.lambda_envs}"
     lambda_role_arn = module.iam.role_arn
 }
 

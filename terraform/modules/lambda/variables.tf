@@ -7,9 +7,6 @@ variable "lambda_function_name" {
   default     = "sg-alert"
 }
 
-variable "webhook_url" {
+variable "lambda_envs" {
   type        = map(string)
-  default     = {
-    WEBHOOK_URL = ""
-  }
 }
